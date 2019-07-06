@@ -8,7 +8,6 @@
 {{- $icon152 := "icons/icon-152x152.png" -}}
 {{- $icon192 := "icons/icon-192x192.png" -}}
 {{- $manifest := "manifest.json" -}}
-{{- $bg := resources.Get (.Site.Params.bg | default "images/grey-prism.svg") -}}
 {{- $avatar := resources.Get (.Site.Params.avatar | default "images/avatar.png") -}}
 {{- $style := resources.Get "styles/main.scss" | resources.ExecuteAsTemplate "styles/main-rendered.scss" . | resources.ToCSS | resources.Minify -}}
 {{- $customStyle := resources.Get (.Site.Params.customStyle | default "styles/custom.scss") | resources.ToCSS | resources.Minify -}}
@@ -81,7 +80,7 @@
 {{ end }}
 
 <!-- Site Generator -->
-<meta name="generator" content="Hugo {{ .Hugo.Version }}">
+<meta name="generator" content="Hugo {{ hugo.Version }}">
 
 <!-- Permalink & RSSlink -->
 <link rel="canonical" href="{{ .Permalink }}">
@@ -126,12 +125,11 @@
 {{ with .Site.Params.customStyle }}<link rel="preload" href="{{ $customStyle.RelPermalink }}" as="style">{{ end }}
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster" as="style">
 <link rel="preload" href="{{ $avatar.RelPermalink }}" as="image">
-<link rel="preload" href="{{ $bg.RelPermalink }}" as="image">
 
 <!-- Main Styles -->
 <style>
   body {
-    background: rgb(244, 243, 241) url('{{ $bg.RelPermalink }}') repeat fixed;
+    background: rgb(244, 243, 241);
   }
 </style>
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">

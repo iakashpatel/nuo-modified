@@ -36,8 +36,11 @@ a {
   top: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  width: 20rem;
+  padding: 1rem 3rem;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 
   & .is-active {
@@ -62,6 +65,9 @@ a {
   @media screen and (max-width: $tablet) {
     position: relative;
     width: 100%;
+    height: auto;
+    display: block;
+    justify-content: none;
   }
 
   @media print {
@@ -72,15 +78,16 @@ a {
 .main {
   box-sizing: border-box;
   position: relative;
-  margin-left: 20rem;
+  margin-left: auto;
+  margin-right: auto;
   border-right: 1px solid $main-border;
   border-left: 1px solid $main-border;
   box-shadow: 0 1px 4px $box-shadow;
   background: $main-background;
   padding: 1rem 2rem;
-  width: calc(100% - 20rem);
-  max-width: 70rem;
+  width: calc(100% - 5rem);
   min-height: 100vh;
+  top: 10rem;
 
   & .list-footer {
     padding: 1.5rem 0;
@@ -94,6 +101,7 @@ a {
     border-left: none;
     padding: 0 1rem;
     width: 100%;
+    top: 3rem;
     min-height: initial;
   }
 }
@@ -103,7 +111,7 @@ a {
 
   @media screen and (max-width: $tablet) {
     display: block;
-    padding: 2rem 1rem;
+    padding: 5rem 1rem 2rem 1rem;
     text-align: center;
     color: $text;
     font-family: $family-monospace;
