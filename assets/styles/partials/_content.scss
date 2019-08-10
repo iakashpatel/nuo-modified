@@ -265,6 +265,18 @@
     }
   }
 
+  & ul#results{
+    padding-left: 0 !important;
+    list-style: none !important;
+  }
+
+  & input#search{
+    border-radius: 0 !important;
+    border: 1px solid black;
+    padding: 10px;
+    width: 90%;
+  }
+
   & .task-list {
     margin-top: 2rem;
     margin-bottom: 2rem;
