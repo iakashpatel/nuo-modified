@@ -1,39 +1,39 @@
 {
-  "name": "Ritchie Pub.",
-  "short_name": "ritchie",
+  "name": "4Bero.com",
+  "short_name": "4bero",
   "display": "standalone",
   "orientation": "any",
   "start_url": "./?utm_source=homescreen",
-  "theme_color": "#02b875",
-  "background_color": "#fafafa",
+  "theme_color": "#02AB6B",
+  "background_color": "#02AB6B",
   "icons": [
     {
-      "src": "icons/icon-128x128.png",
+      "src": "icons/4bero.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-144x144.png",
+      "src": "icons/4bero.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-152x152.png",
+      "src": "icons/4bero.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-192x192.png",
+      "src": "icons/4bero.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-256x256.png",
+      "src": "icons/4bero.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "icons/4bero.png",
       "sizes": "512x512",
       "type": "image/png"
     }

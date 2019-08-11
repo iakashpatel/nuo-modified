@@ -11,5 +11,5 @@ features = ["Blog", "Works", "Gallery", "Tags", "Portfolio"]
 min_version = "0.50"
 
 [author]
-  name = "Ritchie Zhu"
-  homepage = "https://laozhu.me"
+  name = "Akash Patel And Ritchie Zhu"
+  homepage = "https://www.4bero.com"
