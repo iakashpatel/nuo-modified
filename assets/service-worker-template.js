@@ -16,10 +16,6 @@ var filesToCache = [
 {{ with .Site.Params.customStyle }}'styles/custom.min.css',{{ end }}
   'scripts/index.min.js',
 
-  // Google fonts
-  'https://fonts.googleapis.com/css?family=Lobster',
-  'https://fonts.gstatic.com/s/lobster/v20/neILzCirqoswsqX9zoKmM4MwWJU.woff2',
-
 {{ with .Site.Params.fontAwesome }}
   // FontAwesome
   'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
@@ -29,13 +25,6 @@ var filesToCache = [
 {{ end }}
   // smooth-scroll
   'https://cdn.jsdelivr.net/npm/smooth-scroll@15.0.0/dist/smooth-scroll.min.js',
-
-  // medium-zoom
-  'https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js',
-
-  // Video.js
-  'https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video-js.min.css',
-  'https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video.min.js',
 
   // MathJax
   'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML',
